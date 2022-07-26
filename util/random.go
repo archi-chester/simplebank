@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"math/rand"
 	"strings"
 	"time"
@@ -8,14 +9,17 @@ import (
 
 const alphabet = "abcdefghijklmnopqrstuvwxyz"
 
+//	initraqnd generator
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+//	RandomInt generate a random integer
 func RandomInt(min, max int64) int64 {
 	return min + rand.Int63n(max-min+1)
 }
 
+//	RandomString generate a random string
 func RandomString(n int) string {
 	var sb strings.Builder
 	k := len(alphabet)
@@ -28,16 +32,24 @@ func RandomString(n int) string {
 	return sb.String()
 }
 
+//	RandomOwner generate a random name
 func RandomOwner() string {
 	return RandomString(6)
 }
 
+//	RandomMoney generate a random money
 func RandomMoney() int64 {
 	return RandomInt(0, 1000)
 }
 
+//	RandomCurrency generate a random currency
 func RandomCurrency() string {
-	currencies := []string{"USD", "EUR", "CAD"}
+	currencies := []string{USD, EUR, CAD}
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
+}
+
+//	RandomEmail generate a random email
+func RandomEmail() string {
+	return fmt.Sprintf("%s@email.com", RandomString(6))
 }

@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 18 20:52:24 2022
+# Make data base, printed on Tue Jul 26 23:16:59 2022
 
 # Variables
 
@@ -26,8 +24,6 @@ DESKTOP_SESSION = gnome
 XDG_SESSION_CLASS = user
 # environment
 XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -47,9 +43,11 @@ SHELL = /bin/sh
 # environment
 GDM_LANG = ru_RU.UTF-8
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{},"_languagePackSupport":true}
+VTE_VERSION = 5402
 # environment
-_ = /usr/share/code/code
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
 # environment
 MAVEN_HOME = /opt/maven
 # makefile (from 'Makefile', line 1)
@@ -57,7 +55,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/terminator.desktop
 # environment
 USERNAME = chester
 # environment
@@ -69,23 +67,21 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-VSCODE_VERBOSE_LOGGING = true
+TERMINATOR_UUID = urn:uuid:883811bb-9279-4571-a23a-49411953cd73
 # environment
 CLUTTER_IM_MODULE = ibus
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8ac90089-4cb4-47a0-8c71-464e6deeec4b.sock
-# environment
-VSCODE_CWD = /home/chester
+VSCODE_CWD = /home/chester/projects/go/simplebank
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/chester/.local/bin:/opt/maven/bin:/opt/jdk-13/bin:/home/chester/.sdkman/candidates/groovy/current/bin:/home/chester/.sdkman/candidates/gradle/current/bin:/opt/maven/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/chester/.dotnet/tools:/usr/lib/jvm/default-java/bin:/usr/local/go/bin
+PATH = /home/chester/.local/bin:/opt/maven/bin:/opt/jdk-13/bin:/home/chester/.sdkman/candidates/groovy/current/bin:/home/chester/.sdkman/candidates/gradle/current/bin:/opt/maven/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/chester/.dotnet/tools:/usr/lib/jvm/default-java/bin:/usr/local/go/bin:/home/chester/go/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/kito:@/tmp/.ICE-unix/1890,unix/kito:/tmp/.ICE-unix/1890
+SESSION_MANAGER = local/kito:@/tmp/.ICE-unix/1854,unix/kito:/tmp/.ICE-unix/1854
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,27 +95,23 @@ XDG_MENU_PREFIX = gnome-
 # environment
 SDKMAN_PLATFORM = LinuxX64
 # environment
-VSCODE_LOG_STACK = false
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = gnome
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 27204
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15579
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :1
 # environment
 GTK_IM_MODULE = ibus
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/chester/projects/go/simplebank
 # environment
@@ -129,7 +121,7 @@ GROOVY_HOME = /home/chester/.sdkman/candidates/groovy/current
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1948
+SSH_AGENT_PID = 1912
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # environment
@@ -139,7 +131,9 @@ GOMODCACHE = /home/chester/go/pkg/mod
 # environment
 HOME = /home/chester
 # environment
-VSCODE_CODE_CACHE_PATH = /home/chester/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/chester/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LOGNAME = chester
 # environment
@@ -148,6 +142,8 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 NVM_CD_FLAGS = 
 # automatic
 +F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 M2_HOME = /opt/maven
 # environment
@@ -164,6 +160,8 @@ XDG_VTNR = 2
 LC_TIME = ru_RU.UTF-8
 # environment
 SDKMAN_VERSION = 5.10.0+617
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -171,7 +169,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 0
+SHLVL = 1
 # environment
 JAVA_HOME = /usr/lib/jvm/default-java
 # environment
@@ -188,12 +186,16 @@ XDG_CURRENT_DESKTOP = GNOME
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /home/chester/projects/go
+# environment
+TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-f0c7123d-1.67.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f0c7123d-1.69.2-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -245,11 +247,15 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 27204
+TERM = xterm-256color
+# environment
+TERMINATOR_DBUS_NAME = net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f
+# environment
+VSCODE_PID = 16721
 # environment
 NVM_RC_VERSION = 
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=16/143=11%
+# Load=122/1024=12%, Rehash=0, Collisions=19/147=13%
 
 # Pattern-specific Variable Values
 
@@ -257,9 +263,9 @@ NVM_RC_VERSION =
 
 # Directories
 
-# . (device 65029, inode 7556210): 11 files, no impossibilities.
+# . (device 65029, inode 7556210): 16 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -270,6 +276,9 @@ NVM_RC_VERSION =
 postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
@@ -282,32 +291,48 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+migratedown1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down 1
+
+.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 sqlc:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
+#  recipe to execute (from 'Makefile', line 23):
 	sqlc generate
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-13 23:38:06.255702671
+#  Last modified 2022-07-25 00:55:41.676042651
 #  File has been updated.
 #  Successfully updated.
 
-test:
+server:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 29):
+	go run main.go
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
 	go test -v -cover ./...
 
 createdb:
@@ -340,28 +365,44 @@ migrateup:
 #  recipe to execute (from 'Makefile', line 11):
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
-migratedown:
+migrateup1:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up 1
+
+migratedown:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
+mock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 32):
+	mockgen -package mockdb -destination db/mock/store.go github.com/archi-chester/simplebank/db/sqlc Store
+
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=16/1024=2%, Rehash=0, Collisions=0/37=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 184 B / avg = 7 B
-# current buf: size = 8162 B / used = 184 B / count = 24 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 273 B / avg = 8 B
+# current buf: size = 8162 B / used = 273 B / count = 33 / avg = 8 B
 
-# strcache performance: lookups = 42 / hit rate = 42%
+# strcache performance: lookups = 60 / hit rate = 45%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/42=2%
-# Finished Make data base on Mon Jul 18 20:52:24 2022
+# Load=33/8192=0%, Rehash=0, Collisions=1/60=2%
+# Finished Make data base on Tue Jul 26 23:16:59 2022
 
  
