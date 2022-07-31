@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 26 23:16:59 2022
+# Make data base, printed on Mon Aug  1 02:29:47 2022
 
 # Variables
 
@@ -67,7 +69,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-TERMINATOR_UUID = urn:uuid:883811bb-9279-4571-a23a-49411953cd73
+TERMINATOR_UUID = urn:uuid:a0049fc9-b141-4f68-aa6d-eab8d938e455
 # environment
 CLUTTER_IM_MODULE = ibus
 # environment
@@ -81,7 +83,7 @@ PATH = /home/chester/.local/bin:/opt/maven/bin:/opt/jdk-13/bin:/home/chester/.sd
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/kito:@/tmp/.ICE-unix/1854,unix/kito:/tmp/.ICE-unix/1854
+SESSION_MANAGER = local/kito:@/tmp/.ICE-unix/1866,unix/kito:/tmp/.ICE-unix/1866
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -105,7 +107,7 @@ XDG_SESSION_DESKTOP = gnome
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15579
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19287
 # automatic
 %F = $(notdir $%)
 # environment
@@ -121,7 +123,7 @@ GROOVY_HOME = /home/chester/.sdkman/candidates/groovy/current
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1912
+SSH_AGENT_PID = 1924
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # environment
@@ -251,7 +253,7 @@ TERM = xterm-256color
 # environment
 TERMINATOR_DBUS_NAME = net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f
 # environment
-VSCODE_PID = 16721
+VSCODE_PID = 19520
 # environment
 NVM_RC_VERSION = 
 # variable set hash-table stats:
@@ -263,9 +265,9 @@ NVM_RC_VERSION =
 
 # Directories
 
-# . (device 65029, inode 7556210): 16 files, no impossibilities.
+# . (device 65029, inode 7556210): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,8 +279,6 @@ postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
  
-make: *** No rule to make target 'all'.  Stop.
-
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
@@ -397,12 +397,12 @@ mock:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 33 / storage = 273 B / avg = 8 B
-# current buf: size = 8162 B / used = 273 B / count = 33 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 34 / storage = 279 B / avg = 8 B
+# current buf: size = 8162 B / used = 279 B / count = 34 / avg = 8 B
 
-# strcache performance: lookups = 60 / hit rate = 45%
+# strcache performance: lookups = 61 / hit rate = 44%
 # hash-table stats:
-# Load=33/8192=0%, Rehash=0, Collisions=1/60=2%
-# Finished Make data base on Tue Jul 26 23:16:59 2022
+# Load=34/8192=0%, Rehash=0, Collisions=1/61=2%
+# Finished Make data base on Mon Aug  1 02:29:47 2022
 
  

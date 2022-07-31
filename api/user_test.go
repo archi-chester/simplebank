@@ -180,7 +180,7 @@ func TestCreateUserAPI(t *testing.T) {
 			store := mockdb.NewMockStore(ctrl)
 			tc.buildStubs(store)
 
-			server := NewServer(store)
+			server := newTestServer(t, store)
 			recorder := httptest.NewRecorder()
 
 			// Marshal body data to JSON
@@ -196,6 +196,10 @@ func TestCreateUserAPI(t *testing.T) {
 		})
 	}
 }
+
+// func NewTestServer(t *testing.T, store *mockdb.MockStore) {
+// 	panic("unimplemented")
+// }
 
 func randomUser(t *testing.T) (user db.User, password string) {
 	password = util.RandomString(6)
